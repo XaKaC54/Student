@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans:ital,wght@1,200&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100&display=swap');
+
+body {
+    background-color: #e0dfdf;
+    color: #000000;
+    font-size: 16px;
+    font-weight: 1000;
+    font-family: 'Montserrat Alternates', sans-serif;
+    margin: auto;
+    padding-top: 20px;
+    max-width: 500px;
+    }
+
+h1 {
+    color: rgb(0, 68, 255);
+    font-family: 'Alumni Sans', sans-serif;
+    font-size: 25px;
+}
+
+section {
+width: auto;
+padding: 2rem;
+border-radius: 1rem;
+background-color: #fff;
+box-shadow: rgb(50 50 93 / 25%) 0px 2px 5px -1px, rgb(0 0 0 / 30%) 0px 1px 3px -1px;
+}
+
+.avatar {
+    width: 200px;
+    border-radius: 28px;
+    box-shadow: 4px 4px 14px rgba(0, 0, 0, 25);
+}
+
+.info {
+    display: flex;
+    text-align: left;
+} 
+
+.infoText {
+    margin-left: 40px;
+    flex: auto;
+}
+
+
+.info p {
+    color: rgb(235, 111, 111);
+    margin: 0;
+    font-family: 'Alumni Sans', sans-serif;
+    font-size: 20px;
+}
+
+.infoText .answer {
+color: rgb(0, 68, 255);
+}
+
+.contacts {
+    display: flex;
+    justify-content: space-around;
+    height: 100px;
+}
+
+.contacts > div {
+    width: 100px;
+    padding: 5px;
+      
+}
+
+.contactPicture img {
+    flex: auto;
+    border-radius: 30px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+.card {
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    font-size: 24px; 
+    background-repeat: no-repeat;
+    background-image:   linear-gradient(to right, #BFE2FF 100%, #BFE2FF 100%),
+        linear-gradient(to bottom, #BFE2FF 100%, #BFE2FF 100%),
+        linear-gradient(to right, #BFE2FF 100%, #BFE2FF 100%),
+        linear-gradient(to bottom, #BFE2FF 100%, #BFE2FF 100%);
+    background-size:    100% 6px, 6px 100%, 100% 6px, 6px 100%;
+    background-position:    0 0, 100% 0, 100% 100%, 0 100%;
+    animation: anim-card 1.25s cubic-bezier(0.19, 1, 0.22, 1) 1;
+    animation-play-state: paused;
+}
+
+
+.card:hover {
+    animation-play-state: running;
+}
+
+@keyframes anim-card {
+    0% {
+        background-size:    0 6px, 6px 0, 0 6px, 6px 0;
+	}
+    25% {
+        background-size:    100% 6px, 6px 0, 0 6px, 6px 0;
+	}
+    50% {
+        background-size:    100% 6px, 6px 100%, 0 6px, 6px 0;
+	}
+    75% {
+        background-size:    100% 6px, 6px 100%, 100% 6px, 6px 0;
+	}
+    100% {
+        background-size:    100% 6px, 6px 100%, 100% 6px, 6px 100%;
+	}
+}
+
+.list {
+    padding: 0 20px;
+}
+
+.list li {
+    color: #86898f;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.table {
+    text-align: center;
+    border-collapse: collapse;
+    border: none;
+    background: #ffffff;
+    border-radius: 50px;
+    display: auto;
+    width: 100%;
+    opacity: 70%;
+}
+
+.table td {
+    border:none;
+    padding: 5px;
+    color: #737a8d;
+    width: 20%;
+}
+
+.table tr {
+    border:none;
+    font-size: 16px;
+    font-weight: 800;
+    padding: 12px 10px;  
+    width: 100%;
+}
+
+.table th {
+    border:none;
+    font-size: 16px;
+    font-weight: 800;
+    padding: 12px 10px;
+  
+}
+
+
+
+@import "https://fonts.googleapis.com/css?family=Russo+One";
+h2.titleAnimation{border-top:5px solid #E0DBDE;border-bottom:5px solid #E0DBDE;font-size:30px;text-align:center;margin-top:40px;margin-bottom:5px;text-transform:uppercase;font-family:'Alumni Sans', sans-serif;font-weight:900;letter-spacing:5px}
+@-webkit-keyframes move-background {
+0%{background-position:-300px 0}
+100%{background-position:300px -300px}
+}
+@-moz-keyframes move-background {
+0%{background-position:-300px 0}
+100%{background-position:300px -300px}
+}
+@keyframes move-background {
+0%{background-position:-300px 0}
+100%{background-position:300px -300px}
+}
+.section-title{-webkit-animation-play-state:running;-moz-animation-play-state:running;animation-play-state:running;color:transparent;background:url(https://obninsksite.ru/assets/theme/images/blog/square.svg) no-repeat #fa0096;background-size:cover;-webkit-text-fill-color:transparent;-moz-text-fill-color:transparent;-webkit-background-clip:text;-moz-background-clip:text;background-clip:text;-webkit-animation:move-background 15s infinite linear alternate;-moz-animation:move-background 15s infinite linear alternate;animation:move-background 15s infinite linear alternate}
